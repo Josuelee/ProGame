@@ -7,11 +7,54 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style/hamburger.css">
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
-    <header>
-
+    <header class="header container">
+      <h1 class="header__title">Pro<span class="header__title--green">Gamer</span></h1>      
+        <button class="hamburger header__button hamburger--squeeze" type="button" id="btn-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>      
+      <nav class="header__navigator" id="navigator">         
+        <ul class="header__menu">        
+          <li class="header__list header__list--margin">
+            <a href="#" class="header__link header__link--home">HOME</a>
+          </li>
+          <li class="header__list" >             
+            <a href="#" class="header__link" id="game">GAMES</a>
+            <a href="#" class="header__item header__item--game">PS4</a>
+            <a href="#" class="header__item  header__item--game ">XboX</a>
+            <a href="#" class="header__item header__item--game ">PUBC</a>
+          </li>
+          <li class="header__list">
+            <a href="#" class="header__link" id="news">NEWS</a>
+            <a href="#" class="header__item header__item--new">Latest</a>
+            <a href="#" class="header__item header__item--new">Popular</a>
+            <a href="#" class="header__item header__item--new">Archive</a>
+          </li>
+          <li class="header__list" >
+            <a href="#" class="header__link" id="review">REVIEW</a>
+            <a href="#" class="header__item header__item--review">Entertaiment</a>
+            <a href="#" class="header__item header__item--review">Games</a>
+          </li>
+          <li class="header__list  " >
+            <a href="#" class="header__link " id="videos"id="videos">VIDEOS</a>
+            <a href="#" class="header__item header__item--video">Youtube Rewind 2020</a>
+            <a href="#" class="header__item header__item--video">Fornite best 200 kills</a>
+          </li>
+          <li class="header__list " >
+            <a href="#" class="header__link " id="gear">GEAR</a>
+            <a href="#" class="header__item header__item--gear">Gaming PC</a>
+            <a href="#" class="header__item header__item--gear">Gaming Chair</a>
+            <a href="#" class="header__item header__item--gear">Gaming Desk</a>
+            <a href="#" class="header__item header__item--gear">Gaming Accessories</a>
+          </li>
+        </ul>        
+      </nav>      
     </header>
     <main>
       <section>
@@ -28,5 +71,6 @@
       <section></section>
     </main>
     <aside></aside>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,138 @@
+:root{
+  --archivo: 'Archivo', sans-serif;
+  --audiowide: 'Audiowide', cursive;
+  --oswald: 'Oswald', sans-serif;
+  --dark-color: #151515;
+  --green-color: #5fad05;
+  --dark-green-color: #559b04;
+  --red-color: #e60012;  
+  --white-color: #ffff;
+  --almost-gray-color: #ddd;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+html{
+  box-sizing: inherit;
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-color);
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hamburger{
+  padding: 0;
+}
+/* header */
+
+.header{    
+  position: relative;
+  display: flex;  
+  justify-content: space-between;  
+}
+
+.header__button{
+  position: fixed;
+  right: 5%;  
+  z-index: 1000;  
+  padding-top: 12px;  
+}
+
+
+.header__title{
+  margin: 0;
+  color: var(--white-color);  
+  font-weight: 300;
+  font-family: var(--audiowide);
+}
+
+.header__title--green{
+  color: var(--green-color);
+}
+
+.header__navigator{
+  position: fixed;   
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: var(--green-color);  
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  min-height: 100vh;
+  transform: translateX(100%);
+  transition: transform ease-in .3s;
+}
+
+.header__navigator--active{
+  transform: translateX(0);
+}
+
+.header__menu{
+  margin: 0;
+  padding-left: 1.2rem;  
+}
+
+.header__list{  
+  margin: 1.2rem 0 0 ;
+  list-style: none;
+}
+
+.header__list--margin{
+  margin: 3rem 0 0;
+}
+
+.header__link,
+.header__item{
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: var(--oswald);
+}
+
+.header__link::after{
+  content: url(../assets/images/arrow.png);
+  display: inline-block;  
+  margin-left: 10px;
+  transform: rotate(270deg);  
+}
+
+.header__link--home::after{
+  content: "";
+}
+
+.header__item{
+  display: block;
+  overflow: hidden;
+  max-height: 0px;
+  font-size: 14px;
+  color: var(--almost-gray-color);    
+}
+
+.header__item--active{
+  max-height: 100px;
+}
+
+
+
+  
+
+
+
