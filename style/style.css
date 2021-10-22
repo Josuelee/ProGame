@@ -40,6 +40,12 @@ img{
 .hamburger{
   padding: 0;
 }
+
+.separator{
+  display: block;
+  margin-top: 1rem;
+  border: 2px solid var(--green-color);
+}
 /* header */
 
 .header{    
@@ -117,6 +123,7 @@ img{
 .header__link--home::after{
   content: "";
 }
+ 
 
 .header__item{
   display: block;
