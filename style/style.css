@@ -174,12 +174,15 @@ img{
   color: var(--white-color);  
   font-size: 1.3rem;
   text-align: justify;
+
 }
 
-
+.article__title{
+  text-align: inherit;
+}
 .article__paragraph{
   font-size: .9rem;
-  color: var(--almost-gray-color);
+  color: var(--almost-gray-color);  
 }
 
 .article__author{
