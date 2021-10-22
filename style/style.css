@@ -41,16 +41,10 @@ img{
 .hamburger{
   padding: 0;
 }
-
-.separator{
-  display: block;
-  margin-top: 1rem;
-  border: 2px solid var(--green-color);
-}
 /* header */
 
 .header{    
-  
+  position: relative;
   display: flex;  
   justify-content: space-between;  
 }
@@ -79,7 +73,7 @@ img{
   top: 0;
   right: 0;
   bottom: 0;
-  width: 250px;
+  width: 150px;
   background-color: var(--green-color);  
   display: flex;
   align-items: flex-start;
@@ -122,6 +116,10 @@ img{
   transform: rotate(270deg);  
 }
 
+.header__link--home::after{
+  content: "";
+}
+
 .header__item{
   display: block;
   overflow: hidden;
@@ -138,7 +136,7 @@ img{
 /* Article */
 
 .article{
-  position: relative;
+  position: relative;        
 }
 .article::after{
   content: "";
@@ -162,7 +160,10 @@ img{
   left: 5%;
   right: 5%;  
   height: 100%;
-  width: 90%;    
+  width: 90%; 
+  display: flex;       
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 
@@ -173,14 +174,15 @@ img{
   color: var(--white-color);  
   font-size: 1.3rem;
   text-align: justify;
+
 }
 
 .article__title{
-  margin: 6rem 0 0;
+  text-align: initial;
 }
 .article__paragraph{
   font-size: .9rem;
-  color: var(--almost-gray-color);
+  color: var(--almost-gray-color);  
 }
 
 .article__author{
@@ -198,5 +200,7 @@ img{
   text-decoration: none;
   font-family: var(--archivo);
   font-size: .8rem;
+  width: 80px;
+  margin-bottom: 10px;
  }
 
