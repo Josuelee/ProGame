@@ -248,6 +248,8 @@ img{
 .news__img{
   object-fit: cover;
   height: 270px;
+  width: 100%;  
+  object-position: top;
 }
 .news__subtitle,
 .news__article-title,
