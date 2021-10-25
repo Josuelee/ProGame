@@ -8,6 +8,7 @@
   --red-color: #e60012;  
   --white-color: #ffff;
   --almost-gray-color: #ddd;
+  --gray-color: #999;
   --transparent: rgba(0,0,0,.5);
 }
 
@@ -211,3 +212,69 @@ img{
   margin-bottom: 10px;
  }
 
+/* News */
+
+.news__separation{
+  background-color: var(--red-color);
+}
+.news__title{   
+  padding: .7rem 0;
+  margin: 1rem auto;    
+  color: var(--white-color);
+  font-family: var(--archivo);
+  font-weight: 500;
+  font-size: 20px;  
+}
+
+.news__title::before{
+  content: url("../assets/images/wifi.png");    
+  margin-right: 10px;
+}
+
+
+.news__img-container{  
+  position: relative;
+}
+.news__img-container::after{
+  content: url(../assets/images/chat.png) " 10";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--red-color);  
+  padding: .4rem .6rem;  
+  color: var(--white-color);  
+}
+
+.news__img{
+  object-fit: cover;
+  height: 270px;
+}
+.news__subtitle,
+.news__article-title,
+.news__category,
+.news__paragraph,
+.news__date{
+  font-weight: 400;  
+  color: var(--almost-gray-color);
+  font-family: var(--archivo);  
+  font-size: 1.2rem;
+}
+.news__subtitle{
+  font-weight: 700;
+}
+.news__paragraph,
+.news__date{
+  color: var(--gray-color);
+  font-size: 1rem;
+}
+
+.news__date{
+  margin-bottom: 40px;
+}
+.news__category{
+  display: inline-block;
+  background-color: var(--red-color);
+  font-family: var(--oswald);
+  font-size: .8rem;
+  padding: .3rem;
+}
