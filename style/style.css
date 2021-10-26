@@ -27,7 +27,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: var(--dark-color);
-  margin-top: 5rem;
+  margin-top: 5.3rem;
 }
 img{
   display: block;
@@ -51,7 +51,7 @@ img{
   top: 0;
   display: flex;  
   justify-content: space-between;  
-  border-bottom: 2px solid var(--green-color);  
+  border-bottom: 3px solid var(--green-color);  
   padding: .8rem 0;
   z-index: 1200;
   background-color: var(--dark-color);
