@@ -52,6 +52,7 @@ img{
   border-bottom: 2px solid var(--green-color);  
   padding: .8rem 0;
   z-index: 1200;
+  background-color: var(--dark-color);
 }
 
 .header__button{
