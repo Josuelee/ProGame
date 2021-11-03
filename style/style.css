@@ -308,3 +308,62 @@ img{
 .trailers__category{
   background-color: var(--green-color);
 }
+
+
+/*  Fornait image article*/
+
+.battle__container{
+  position: relative;   
+}
+
+.battle__img{
+  height: 110vh;
+  object-fit: cover;  
+}
+
+.battle__content{
+  position: absolute;
+  top: 50%;  
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.battle__content *{
+  color: var(--white-color);
+  font-family: var(--archivo);
+}
+
+.battle__subtitle{
+  font-family: var(--audiowide);
+  margin: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.battle__title{
+  font-family: var(--audiowide);
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.battle__paragraph{
+  margin-top: 0;
+  text-align: center;
+  color: var(--almost-gray-color);
+}
+
+.battle__link{
+  display: inline-block;
+  text-decoration: none;    
+  padding: .5rem;  
+  background-color: var(--green-color);
+}
+
+.battle__link img{
+  display: inline-block;
+}
