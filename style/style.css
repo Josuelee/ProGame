@@ -212,14 +212,15 @@ img{
   margin-bottom: 10px;
  }
 
-/* News & Trailers */
+/* News & Trailers & Reviews */
 
 .trailers__article{
   border-bottom: 1px solid var(--green-color);
   margin-bottom: 20px;
 }
 
-.news__separation{
+.news__separation,
+.reviews__separation{
   background-color: var(--red-color);
 }
 
@@ -228,7 +229,8 @@ img{
 }
 
 .news__title,
-.trailers__title{   
+.trailers__title,
+.reviews__title{   
   padding: .7rem 0;
   margin: 1rem auto;    
   color: var(--white-color);
@@ -238,7 +240,8 @@ img{
 }
 
 .news__title::before,
-.trailers__title::before{
+.trailers__title::before,
+.reviews__title::before{
   content: url("../assets/images/wifi.png");    
   margin-right: 10px;
 }
@@ -247,11 +250,17 @@ img{
   content: url("../assets/images/video.png");
 }
 
+.reviews__title::before{
+  content: url("../assets/images/doble-chat.png");
+}
 
-.news__img-container{  
+.news__img-container,
+.reviews__img-container{  
   position: relative;
 }
-.news__img-container::after{
+
+.news__img-container::after,
+.reviews__img-container::after{
   content: url(../assets/images/chat.png) " 10";
   position: absolute;
   right: 0;
@@ -261,13 +270,19 @@ img{
   color: var(--white-color);  
 }
 
+.reviews__img-container::after{
+  content: url(../assets/images/star.png) "5";
+}
+
 .news__img,
-.trailers__video{
+.trailers__video,
+.reviews__img{
   object-fit: cover;
   height: 270px;
   width: 100%;  
   object-position: top;
 }
+
 .news__subtitle,
 .news__article-title,
 .news__category,
@@ -275,29 +290,39 @@ img{
 .news__date,
 .trailers__article-title,
 .trailers__paragraph,
-.trailers__category{
+.trailers__category,
+.reviews__subtitle,
+.reviews__article-title,
+.reviews__category,
+.reviews__paragraph,
+.reviews__date{
   font-weight: 400;  
   color: var(--almost-gray-color);
   font-family: var(--archivo);  
   font-size: 1.2rem;
 }
 
-.news__subtitle{
+.news__subtitle,
+.reviews__subtitle{
   font-weight: 700;
 }
 
 .news__paragraph,
 .news__date,
-.trailers__paragraph{
+.trailers__paragraph,
+.reviews__paragraph,
+.reviews__date{
   color: var(--gray-color);
   font-size: 1rem;
 }
 
-.news__date{
+.news__date,
+.reviews_-date{
   margin-bottom: 40px;
 }
 .news__category,
-.trailers__category{
+.trailers__category,
+.reviews__category{
   display: inline-block;
   background-color: var(--red-color);
   font-family: var(--oswald);
