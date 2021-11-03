@@ -323,12 +323,13 @@ img{
 
 .battle__content{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);    
+  top: 50%;  
   z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;  
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .battle__content *{
@@ -359,7 +360,7 @@ img{
 .battle__link{
   display: inline-block;
   text-decoration: none;    
-  padding: .8rem;  
+  padding: .5rem;  
   background-color: var(--green-color);
 }
 
